@@ -1,0 +1,70 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix jdc: <https://jardindesconnaissances.univ-paris8.fr/onto/jdc#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#>.
+
+@prefix art: <https://jardindesconnaissances.univ-paris8.fr/onto/article#> . #Article
+
+<https://jardindesconnaissances.univ-paris8.fr/onto/article#> a owl:Ontology ;
+    dcterms:title "Article scientifique" .
+
+art:TitreArticle a rdfs:Class ;
+    rdfs:label "Article" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+art:DomaineArticle a rdfs:Property  ;
+    rdfs:label "DomaineArticle" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+art:DateArticle a rdfs:Property  ;
+    rdfs:label "DateArticle" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+art:LangueArticle a rdfs:Property  ;
+    rdfs:label "LangueArticle" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+#----------------------------------------------
+
+art:Chercheur a rdfs:Class ;
+    rdfs:label "Chercheur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+art:NomChercheur a rdfs:Property  ;
+    rdfs:label "NomChercheur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+art:PrenomChercheur a rdfs:Property  ;
+    rdfs:label "PrenomChercheur" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+#----------------------------------------------
+
+art:Organisme a rdfs:Class ;
+    rdfs:label "Organisme" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+art:NomOrganisme a rdfs:Property  ;
+    rdfs:label "NomOrganisme" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+art:PaysOrganisme a rdfs:Property  ;
+    rdfs:label "PaysOrganisme" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+#----------------------------------------------
+
