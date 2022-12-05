@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <table id="TableBody">
+
+        <tr>
+            <th scope="col">Identifiant</th>
+            <th scope="col">Titre</th>
+            <th scope="col">Media</th>
+        </tr>
+
+    </table>
+</body>
+
+<script>
+
+    function getData() {
+        d3.json("items.json").then((data) => {
+
+            let template = ['o:id', 'o:media', 'o:title'];
+
+            let arrayOrganisme = [];
+
+            for (let i = 0; i < template.length; i++) {
+                arrayOrganisme.push(data[0][template[i]]);
+            }
+
+            let arrayArticle = [];
+
+            for (let i = 0; i < template.length; i++) {
+                arrayArticle.push(data[1][template[i]]);
+            }
+
+            let arrayChercheur = [];
+
+            for (let i = 0; i < template.length; i++) {
+                arrayChercheur.push(data[2][template[i]]);
+            }
+
+            let array = [arrayOrganisme, arrayArticle, arrayChercheur];
+
+            for (let i = 0; i < array.length; i++) {
+
+                document.getElementById("TableBody").innerHTML += "<tr><td scope='row'>" + array[i][0] + "</td>"
+                    + "<td>" + array[i][2] + "</td>"
+                    + "<td><img src='" + array[i][3] + "' alt='media " + array[i][3] + "'" + "</td></tr>";
+
+            }
+        });
+    }
+
+    getData();
+</script>
+
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+
+</html>
