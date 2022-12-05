@@ -4,67 +4,76 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix o: <http://omeka.org/s/vocabs/o#> .
-@prefix jdc: <https://jardindesconnaissances.univ-paris8.fr/onto/jdc#> .
+
+@prefix article: <https://azerty.fr/onto/article> .
+
 @prefix ma: <http://www.w3.org/ns/ma-ont#>.
 
-@prefix art: <https://jardindesconnaissances.univ-paris8.fr/onto/article#> . #Article
-
-<https://jardindesconnaissances.univ-paris8.fr/onto/article#> a owl:Ontology ;
+<https://azerty.fr/onto/article> a owl:Ontology ;
     dcterms:title "Article scientifique" .
 
-art:TitreArticle a rdfs:Class ;
-    rdfs:label "Article" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
+#################################################################
 
-art:DomaineArticle a rdfs:Property  ;
-    rdfs:label "DomaineArticle" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-art:DateArticle a rdfs:Property  ;
-    rdfs:label "DateArticle" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-art:LangueArticle a rdfs:Property  ;
-    rdfs:label "LangueArticle" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-#----------------------------------------------
-
-art:Chercheur a rdfs:Class ;
+article:Chercheur a rdfs:Class ;
     rdfs:label "Chercheur" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-art:NomChercheur a rdfs:Property  ;
-    rdfs:label "NomChercheur" ;
+article:ChercheurNom a rdf:Property ;
+    rdfs:label "ChercheurNom" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-art:PrenomChercheur a rdfs:Property  ;
-    rdfs:label "PrenomChercheur" ;
+article:ChercheurPrenom a rdf:Property ;
+    rdfs:label "ChercheurPrenom" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-#----------------------------------------------
+article:ChercheurMail a rdf:Property ;
+    rdfs:label "ChercheurMail" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
 
-art:Organisme a rdfs:Class ;
+#################################################################
+
+article:Article a rdfs:Class ;
+    rdfs:label "Article" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+article:DomaineArticle a rdf:Property ;
+    rdfs:label "DomaineArticle" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+article:DateArticle a rdf:Property ;
+    rdfs:label "DateArticle" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+article:LangueArticle a rdf:Property ;
+    rdfs:label "LangueArticle" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+#################################################################
+
+article:Organisme a rdfs:Class ;
     rdfs:label "Organisme" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-art:NomOrganisme a rdfs:Property  ;
+article:NomOrganisme a rdf:Property ;
     rdfs:label "NomOrganisme" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-art:PaysOrganisme a rdfs:Property  ;
+article:PaysOrganisme a rdf:Property ;
     rdfs:label "PaysOrganisme" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
-#----------------------------------------------
-
+article:DomaineOrganisme a rdf:Property ;
+    rdfs:label "DomaineOrganisme" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" . 
