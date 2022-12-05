@@ -41,6 +41,11 @@ article:Article a rdfs:Class ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 
+article:LangueArticle a rdf:Property ;
+    rdfs:label "TitreArticle" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+    
 article:DomaineArticle a rdf:Property ;
     rdfs:label "DomaineArticle" ;
     rdfs:domain o:Resource ;
@@ -48,11 +53,6 @@ article:DomaineArticle a rdf:Property ;
 
 article:DateArticle a rdf:Property ;
     rdfs:label "DateArticle" ;
-    rdfs:domain o:Resource ;
-    vs:term_status "experimental" .
-
-article:LangueArticle a rdf:Property ;
-    rdfs:label "LangueArticle" ;
     rdfs:domain o:Resource ;
     vs:term_status "experimental" .
 

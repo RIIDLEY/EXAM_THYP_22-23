@@ -1,0 +1,44 @@
+{
+    "o:label": "Organisme",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/azerty.fr\/onto\/article",
+            "vocabulary_label": "Article Scientifique",
+            "local_name": "articleNomOrganisme",
+            "label": "NomOrganisme"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/azerty.fr\/onto\/article",
+            "vocabulary_label": "Article Scientifique",
+            "local_name": "articlePaysOrganisme",
+            "label": "PaysOrganisme"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/azerty.fr\/onto\/article",
+            "vocabulary_label": "Article Scientifique",
+            "local_name": "articleDomaineOrganisme",
+            "label": "DomaineOrganisme"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "https:\/\/azerty.fr\/onto\/article",
+        "vocabulary_label": "Article Scientifique",
+        "local_name": "articleOrganisme",
+        "label": "Organisme"
+    }
+}

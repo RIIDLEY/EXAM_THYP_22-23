@@ -1,0 +1,44 @@
+{
+    "o:label": "Article",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/azerty.fr\/onto\/article",
+            "vocabulary_label": "Article Scientifique",
+            "local_name": "articleLangueArticle",
+            "label": "TitreArticle"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/azerty.fr\/onto\/article",
+            "vocabulary_label": "Article Scientifique",
+            "local_name": "articleDomaineArticle",
+            "label": "DomaineArticle"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/azerty.fr\/onto\/article",
+            "vocabulary_label": "Article Scientifique",
+            "local_name": "articleDateArticle",
+            "label": "DateArticle"
+        }
+    ],
+    "o:resource_class": {
+        "vocabulary_namespace_uri": "https:\/\/azerty.fr\/onto\/article",
+        "vocabulary_label": "Article Scientifique",
+        "local_name": "articleArticle",
+        "label": "Article"
+    }
+}
