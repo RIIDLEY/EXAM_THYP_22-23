@@ -32,25 +32,16 @@
 
             let template = ['o:id', 'o:media', 'o:title'];
 
-            let arrayOrganisme = [];
+            let array = []
 
-            for (let i = 0; i < template.length; i++) {
-                arrayOrganisme.push(data[0][template[i]]);
+            for (let k = 0; k < data.length; k++) {
+                tmp = []
+                for (let i = 0; i < template.length; i++) {
+                    tmp.push(data[k][template[i]]);
+                }
+                array.push(tmp);
             }
 
-            let arrayArticle = [];
-
-            for (let i = 0; i < template.length; i++) {
-                arrayArticle.push(data[1][template[i]]);
-            }
-
-            let arrayChercheur = [];
-
-            for (let i = 0; i < template.length; i++) {
-                arrayChercheur.push(data[2][template[i]]);
-            }
-
-            let array = [arrayOrganisme, arrayArticle, arrayChercheur];
 
             for (let i = 0; i < array.length; i++) {
 
